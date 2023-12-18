@@ -12,14 +12,14 @@
 
 #include "ft_printf.h"
 
-int ft_hexconvert(unsigned int arg, char specifier)
+int	ft_hexconvert(unsigned int arg, char specifier)
 {
-	int rtr;
-	int rem_int;
+	int	rtr;
+	int	rem_int;
 
 	rtr = 0;
 	rem_int = 0;
-	if(arg > 0)
+	if (arg > 0)
 	{
 		rtr += ft_hexconvert(arg / 16, specifier);
 		rem_int = arg % 16;
@@ -27,10 +27,10 @@ int ft_hexconvert(unsigned int arg, char specifier)
 			rem_int += 55;
 		else
 			rem_int += 48;
-		if(specifier == 'x')
+		if (specifier == 'x')
 			rtr += ft_putchar_fd(ft_tolower(rem_int), 1);
-		if(specifier == 'X')
+		if (specifier == 'X')
 			rtr += ft_putchar_fd(ft_toupper(rem_int), 1);
 	}
-	return(rtr);
+	return (rtr);
 }
