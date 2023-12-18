@@ -12,14 +12,14 @@
 
 #include "ft_printf.h"
 
-int ft_hexconvertptr(long unsigned int arg)
+int	ft_hexconvertptr(long unsigned int arg)
 {
-	int rtr;
-	int rem_int;
+	int	rtr;
+	int	rem_int;
 
 	rtr = 0;
 	rem_int = 0;
-	if(arg > 0)
+	if (arg > 0)
 	{
 		rtr += ft_hexconvertptr(arg / 16);
 		rem_int = arg % 16;
@@ -29,5 +29,5 @@ int ft_hexconvertptr(long unsigned int arg)
 			rem_int += 48;
 		rtr += ft_putchar_fd(ft_tolower(rem_int), 1);
 	}
-	return(rtr);
+	return (rtr);
 }
