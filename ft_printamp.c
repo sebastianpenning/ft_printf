@@ -12,11 +12,11 @@
 
 #include "ft_printf.h"
 
-int ft_printamp()
+int	ft_printamp(void)
 {
-	int rtr;
+	int	rtr;
 
 	rtr = 0;
 	rtr += ft_putchar_fd('%', 1);
-	return(rtr);
+	return (rtr);
 }
