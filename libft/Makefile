@@ -19,16 +19,11 @@ SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		ft_strmapi.c ft_strncmp.c ft_strnstr.c ft_strrchr.c ft_strtrim.c \
 		ft_substr.c ft_tolower.c ft_toupper.c
 
-BNS = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-		ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
-
 # These objects are dependent on the sources macro
 # This syntax means that it replaces all the .c to .o
 # when the $(OBJS) macro is called.
 
 OBJS = $(SRCS:.c=.o)
-
-B-OBJS = $(BNS:.c=.o)
 
 # This is the $(NAME) macro that is equivalent to the 
 # libft.a file.
@@ -67,7 +62,6 @@ $(NAME): $(OBJS)
 
 clean:
 	rm -f $(OBJS)
-	rm -f $(B-OBJS)
 
 # This rule has a target which is clean
 # This will make sure clean is up to date and 
@@ -83,6 +77,3 @@ fclean: clean
 # same with all.
 
 re: fclean all
-
-bonus: $(B-OBJS)
-	ar rcs $(NAME) $(B-OBJS)
