@@ -22,16 +22,16 @@
 //these inclusions are needed to be able to use the write function from
 // unistd library. and malloc and free from the stdlib library.
 
-#include <stdarg.h>
-#include <unistd.h>
-#include "libft/libft.h"
+# include <stdarg.h>
+# include <unistd.h>
+# include "libft/libft.h"
 
-int     ft_printf(const char *format, ...);
-int     ft_printchar(va_list args);
-int     ft_printstr(va_list args);
-int     ft_printint(va_list args);
-int     ft_printuint(va_list args);
-int     ft_printamp();
+int		ft_printf(const char *format, ...);
+int		ft_printchar(va_list args);
+int		ft_printstr(va_list args);
+int		ft_printint(va_list args);
+int		ft_printuint(va_list args);
+int		ft_printamp(void);
 int		ft_printhex(va_list args, char specifier);
 int		ft_hexconvert(unsigned int arg, char specifier);
 int		ft_hexconvertptr(long unsigned int arg);
