@@ -44,7 +44,7 @@ $(NAME): $(LIB_DIR)/libft.a $(OBJS)
 	ar rcs $(NAME) $(OBJS)
 
 $(LIB_DIR)/libft.a: 
-	@$(MAKE) -C $(LIB_DIR) all bonus
+	@$(MAKE) -C $(LIB_DIR) all
 	cp libft/libft.a libftprintf.a
 	
 
