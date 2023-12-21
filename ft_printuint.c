@@ -1,16 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_printuint.c                                     :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mynodeus <mynodeus@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/03 10:45:03 by spenning          #+#    #+#             */
-/*   Updated: 2023/12/18 21:13:36 by mynodeus         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_printuint.c                                     :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: spenning <spenning@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2023/12/03 10:45:03 by spenning      #+#    #+#                 */
+/*   Updated: 2023/12/21 14:31:03 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+// This function converts the value passed from ft_printunit
+// recursively and then writes out the value with ft_putchar_fd
 
 static int	printunit(unsigned int arg)
 {
@@ -27,6 +30,8 @@ static int	printunit(unsigned int arg)
 	}
 	return (rtr);
 }
+// This function retrieves the value from the va_list in 
+// order to pass it to printunit
 
 int	ft_printuint(va_list args)
 {
