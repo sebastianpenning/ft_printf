@@ -1,16 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_printint.c                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mynodeus <mynodeus@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/03 10:44:37 by spenning          #+#    #+#             */
-/*   Updated: 2023/12/18 21:08:03 by mynodeus         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_printint.c                                      :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: spenning <spenning@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2023/12/03 10:44:37 by spenning      #+#    #+#                 */
+/*   Updated: 2023/12/21 14:36:51 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+// This function takes the value from va_list and then
+// uses ft_putnbr_fd to print out the value
 
 int	ft_printint(va_list args)
 {
