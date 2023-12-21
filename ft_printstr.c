@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_printstr.c                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mynodeus <mynodeus@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/03 10:44:57 by spenning          #+#    #+#             */
-/*   Updated: 2023/12/18 21:10:22 by mynodeus         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_printstr.c                                      :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: spenning <spenning@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2023/12/03 10:44:57 by spenning      #+#    #+#                 */
+/*   Updated: 2023/12/21 14:34:44 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+// this function retrieves the value from the va_list
+// and then goes through the string and prints the string 
+// with ft_putchar_fd while returning the len printed with 
+// rtr
 
 int	ft_printstr(va_list args)
 {
