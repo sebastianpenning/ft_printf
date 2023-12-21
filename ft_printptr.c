@@ -1,16 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_printptr.c                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mynodeus <mynodeus@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/03 10:44:48 by spenning          #+#    #+#             */
-/*   Updated: 2023/12/18 21:09:19 by mynodeus         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   ft_printptr.c                                      :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: spenning <spenning@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2023/12/03 10:44:48 by spenning      #+#    #+#                 */
+/*   Updated: 2023/12/21 14:58:57 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+// this function retrieves the value from va_list
+// then it will put the two's complement before
+// passing the value to ft_hexconverptr
 
 int	ft_printptr(va_list args)
 {
