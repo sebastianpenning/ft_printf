@@ -6,7 +6,7 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/21 23:03:23 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/21 13:58:10 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 14:26:58 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -50,19 +50,22 @@ int		ft_printuint(va_list args);
 // for ampersands
 int		ft_printamp(void);
 // This function aids the ft_printf by printing all variables
-// which are passed with either the %x or %X formatter. These formatters are 
-// used to print the hexidecimal values. Which are then passed on to ft_hexconvert
+// which are passed with either the %x or %X formatter. 
+// These formatters are used to print the hexidecimal values. 
+// Which are then passed on to ft_hexconvert
 int		ft_printhex(va_list args, char specifier);
 // This function aids ft_printhex. the values and formatters are passed
-// on to this function. This function recursively converts the value to hexidecimal 
-// and then depending on the formatter will either print the hexidecimal in upper or lowercase
+// on to this function. This function recursively converts the value to 
+// hexidecimal and then depending on the formatter will either print the 
+// hexidecimal in upper or lowercase
 int		ft_hexconvert(unsigned int arg, char specifier);
 // This function aids ft_printf. by printing all variables
 // which are passed with either the %p formatter.The %p formatter is meant
 // for address of pointers. This function is similar to ft_printhex
 int		ft_printptr(va_list args);
-// This function aids ft_printptr. This function recursively converts the value to hexidecimal 
-// and will then print the hexidecimal lowercase. This function is similar such as ft_hexconvert
+// This function aids ft_printptr. This function recursively converts the 
+// value to hexidecimal and will then print the hexidecimal lowercase. This 
+// function is similar such as ft_hexconvert
 int		ft_hexconvertptr(long unsigned int arg);
 
 #endif
