@@ -6,11 +6,12 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/18 21:06:04 by mynodeus      #+#    #+#                 */
-/*   Updated: 2023/12/21 14:52:56 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 15:07:25 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 // this function retrieves the value from va_list
 // and then passes it on t ft_hexconvert to convert the 

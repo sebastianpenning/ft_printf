@@ -6,11 +6,12 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/03 10:44:48 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/21 14:58:57 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 15:07:19 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 // this function retrieves the value from va_list
 // then it will put the two's complement before

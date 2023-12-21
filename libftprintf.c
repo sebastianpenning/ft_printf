@@ -6,11 +6,12 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/03 10:45:10 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/21 14:24:30 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 15:07:02 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 // This function will check the datatype that is passed from printf
 // if this datatype matches one of datatypes that this printf can print it will

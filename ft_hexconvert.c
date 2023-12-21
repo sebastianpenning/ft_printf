@@ -6,11 +6,12 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/03 10:43:41 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/21 14:55:42 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 15:07:43 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 // This functions retrieves the arg value from ft_printhex
 // does the conversion and then based on the specifier passed

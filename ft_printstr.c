@@ -6,11 +6,12 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/03 10:44:57 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/21 14:34:44 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 15:07:16 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 // this function retrieves the value from the va_list
 // and then goes through the string and prints the string 

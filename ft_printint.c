@@ -6,11 +6,12 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/03 10:44:37 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/21 14:36:51 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 15:07:22 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 // This function takes the value from va_list and then
 // uses ft_putnbr_fd to print out the value

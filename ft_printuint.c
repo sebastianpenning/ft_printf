@@ -6,11 +6,12 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/03 10:45:03 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/21 14:31:03 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 15:07:15 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include "ft_printf_internal.h"
 
 // This function converts the value passed from ft_printunit
 // recursively and then writes out the value with ft_putchar_fd
