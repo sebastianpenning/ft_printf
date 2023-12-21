@@ -6,11 +6,14 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/03 10:43:41 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/03 11:42:12 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 15:00:55 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+// This function converts the value passed from ft_printptr to 
+// hexidecimal recursively
 
 int	ft_hexconvertptr(long unsigned int arg)
 {
