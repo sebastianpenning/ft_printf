@@ -1,16 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   libftprintf.c                                      :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mynodeus <mynodeus@student.42.fr>          +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/03 10:45:10 by spenning          #+#    #+#             */
-/*   Updated: 2023/12/18 21:15:09 by mynodeus         ###   ########.fr       */
+/*                                                        ::::::::            */
+/*   libftprintf.c                                      :+:    :+:            */
+/*                                                     +:+                    */
+/*   By: spenning <spenning@student.42.fr>            +#+                     */
+/*                                                   +#+                      */
+/*   Created: 2023/12/03 10:45:10 by spenning      #+#    #+#                 */
+/*   Updated: 2023/12/21 14:23:47 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
+
 #include "ft_printf.h"
+
+// This function will check the datatype that is passed from printf
+// if this datatype matches one of datatypes that this printf can print it will
+// call its matching function
 
 static int	check_datatype(const char specifier, va_list args)
 {
@@ -35,6 +40,11 @@ static int	check_datatype(const char specifier, va_list args)
 		rtr = ft_printptr(args);
 	return (rtr);
 }
+
+// This is the main function where printf starts
+// this function will go through the entire string one byte at a time
+// if a formatter is found then it will check the datatype
+// otherwise it will print the string
 
 int	ft_printf(const char *format, ...)
 {
