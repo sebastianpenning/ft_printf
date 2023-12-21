@@ -1,3 +1,6 @@
+# This is the macro used to identify the libft directory 
+# to be used to cal the makefile of libft and retrieve the archive file
+
 LIB_DIR := libft
 
 # This is the $(CC) Macro that indicates 
@@ -24,17 +27,28 @@ SRCS = libftprintf.c ft_printchar.c ft_printstr.c \
 OBJS = $(SRCS:.c=.o)
 
 # This is the $(NAME) macro that is equivalent to the 
-# libft.a file.
+# libftprint.a file.
 
 NAME = libftprintf.a
 
-# This all is rule that is dependent on $(NAME) rule
+# This rule makes sure that the makefile will
+# not accidently confuse the rules in this file for 
+# physical files which could be called the same as the rules
+# for example if there is a file called all, then this prevents
+# the makefile from trying to do anything with that file called all
+
+.PHONY: all clean fclean re
+
+# This all is a rule that is dependent on $(NAME) rule
 # because it is the first command in the makefile, it will be 
 # triggered when we call "make" in the terminal
 
 all: $(NAME) 
 
 # This is a rule that is called $(NAME), which is dependent on
+# $(LIB_DIR)/libft.a rule, which first goes into the libft directory 
+# to call it's makefile that then copies to libft.a into the local directory
+# and names it libftprintf.a. It is also dependent on 
 # $(OBJS), which once it's updates, fires the ar command to 
 # (r)eplace files in archive that been changed, (c) create new 
 # files if they did not exist yet, and reindex(s) the archive
@@ -59,7 +73,8 @@ $(LIB_DIR)/libft.a:
  %.o: %.c
 	$(CC) $(CFLAGS) -c $<  -o $@
 
-# This rule has a phony target. The command 
+# This rule has a phony target. This rule will first call
+# the clean command in the makefile of libft. Then the command 
 # will forcefully remove all elements that are in 
 # $(OBJS) macro.
 
@@ -69,7 +84,8 @@ clean:
 
 # This rule has a target which is clean
 # This will make sure clean is up to date and 
-# execute it's commands before, it cleans the 
+# execute it's commands before, it then calles the fclean of 
+# the libft makefile and then it cleans the 
 # $(NAME) macro
 
 fclean: clean
