@@ -6,7 +6,7 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/21 23:03:23 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/03 11:42:29 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 13:25:39 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,7 @@
 # define FT_PRINTF_H
 
 //these inclusions are needed to be able to use the write function from
-// unistd library. and malloc and free from the stdlib library.
+// unistd library. and va_list from the stdarg.h library. and the libft library
 
 # include <stdarg.h>
 # include <unistd.h>
