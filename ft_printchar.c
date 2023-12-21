@@ -6,11 +6,14 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/03 10:44:06 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/03 10:44:12 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 14:41:04 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+// This function takes the value from va_list and then uses
+// write to output the char 
 
 int	ft_printchar(va_list args)
 {
