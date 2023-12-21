@@ -6,11 +6,15 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/03 10:43:41 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/03 11:49:05 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 14:55:42 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+// This functions retrieves the arg value from ft_printhex
+// does the conversion and then based on the specifier passed
+// it will print in upper or lowercase
 
 int	ft_hexconvert(unsigned int arg, char specifier)
 {
