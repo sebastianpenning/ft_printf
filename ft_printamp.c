@@ -6,11 +6,13 @@
 /*   By: spenning <spenning@student.42.fr>            +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/12/03 10:44:00 by spenning      #+#    #+#                 */
-/*   Updated: 2023/12/03 10:44:02 by spenning      ########   odam.nl         */
+/*   Updated: 2023/12/21 14:42:10 by spenning      ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+
+// This function uses ft_putchar_fd to print out ampersand
 
 int	ft_printamp(void)
 {
